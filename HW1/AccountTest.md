@@ -28,7 +28,7 @@ public class AccountTest {
         
         System.out.print("Enter withdraw amount for account2: ");
         withdrawAmount = input.nextDouble();
-        System.out.printf("%nwithdrawing %.2f from account1's balance%n%n",withdrawAmount);
+        System.out.printf("%nwithdrawing %.2f from account2's balance%n%n",withdrawAmount);
         account2.withdraw(withdrawAmount);
         
         System.out.printf("%s balance: $%.2f%n", account1.getName(),account1.getBalance());
