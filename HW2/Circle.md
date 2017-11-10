@@ -12,7 +12,7 @@ public class Circle {
         
          System.out.println("Enter the radius:");
          double r= radius.nextDouble();
-         double  area=(22*r*r)/7 ;
+         double  area= Math.PI * Math.Pow(r,2) ;
          System.out.println("Area of Circle is: " + area);      
     }
     
