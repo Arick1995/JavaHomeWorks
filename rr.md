@@ -1,15 +1,29 @@
 ````javascript
-import React from 'react';
+import React, { Componet } from 'react';
+import { Link } from 'react-router';
 
-export default () => {
-	return(
-		<div>
-			Super Special Sercet Recipe
-			<ul>
-				<li>1 Cup Sugar</li>
-				<li>1 Cup Pepper</li>
-				<li>1 Cup Salt</li>
-			</ul>
-		</div>
-		)
+class Header extends Componet{
+	authButton(){
+		return <button>Sign in</button>;
+	}
+
+	render(){
+		return (
+			<nav className="navbar navbar-light">
+				<ul className="nav navbar-nav">
+					<li className="nav-item">
+						<Link to="/">Home</Link>
+					</li>
+					<li className = "nav-item">
+						<Link to = "/resources">Resources</Link>
+					</li>
+					<li className="nav-item">
+						{this.authButton()}
+					</li>
+				</ul>
+			</nav>
+			);
+	}
 }
+
+export default Header
