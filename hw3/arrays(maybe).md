@@ -13,7 +13,7 @@ public class Array {
         Scanner input = new Scanner(System.in);
         
         int[] arr = new int[12];
-        int[][] rd = new int[12][12];
+        int[][] rd = new int[12][2];
         int j = 0;
         
         
